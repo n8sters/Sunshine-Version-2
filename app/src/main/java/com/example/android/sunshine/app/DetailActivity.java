@@ -47,11 +47,15 @@ public class DetailActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            // start settings activity when menu item is selected
+            startActivity(new Intent(DetailActivity.this, SettingsActivity.class));
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 
     /**
      * A placeholder fragment containing a simple view.
