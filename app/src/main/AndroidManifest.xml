@@ -33,6 +33,12 @@
                 android:value="com.example.android.sunshine.app.MainActivity" />
         </activity>
 
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 
